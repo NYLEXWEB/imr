@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675">
+  <defs>
+    <linearGradient id="grad-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0E1033"/>
+      <stop offset="50%" stop-color="#17194D"/>
+      <stop offset="100%" stop-color="#1E235C"/>
+    </linearGradient>
+    <linearGradient id="accent-glow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4B91CC" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#4B91CC" stop-opacity="0.2"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#FFFFFF" stroke-opacity="0.04" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="675" fill="url(#grad-bg)"/>
+  <rect width="1200" height="675" fill="url(#grid)"/>
+
+  <!-- Architectural accent elements -->
+  <g opacity="0.3">
+    <circle cx="1020" cy="236.24999999999997" r="303.75" fill="none" stroke="#4B91CC" stroke-width="1.5" stroke-dasharray="6 6"/>
+    <circle cx="1020" cy="236.24999999999997" r="202.5" fill="none" stroke="#FFFFFF" stroke-opacity="0.1" stroke-width="1"/>
+    <path d="M 0 573.75 L 720 573.75 L 900 675" fill="none" stroke="#4B91CC" stroke-width="2"/>
+    <line x1="120" y1="101.25" x2="480" y2="101.25" stroke="#FFFFFF" stroke-opacity="0.15" stroke-width="1"/>
+  </g>
+
+  <!-- Subtle watermark emblem -->
+  <g transform="translate(912, 168.75)" opacity="0.12">
+    <polygon points="50,10 90,30 90,80 50,100 10,80 10,30" fill="none" stroke="#FFFFFF" stroke-width="4"/>
+    <circle cx="50" cy="55" r="22" fill="none" stroke="#FFFFFF" stroke-width="3"/>
+  </g>
+
+  <!-- Content Container Card -->
+  <g transform="translate(96, 284)">
+    <!-- Category Badge -->
+    <rect x="0" y="0" width="204.5" height="28" rx="6" fill="#4B91CC" fill-opacity="0.2" stroke="#4B91CC" stroke-opacity="0.6" stroke-width="1"/>
+    <text x="12" y="18" font-family="'Manrope', -apple-system, sans-serif" font-size="11" font-weight="700" fill="#E8EEF5" letter-spacing="1.5">OPERATIONAL CENTERS</text>
+
+    <!-- Main Title -->
+    <text x="0" y="70" font-family="'Manrope', -apple-system, sans-serif" font-size="34" font-weight="700" fill="#FFFFFF" letter-spacing="-0.5">Indian Manpower Resource Operations</text>
+
+    <!-- Subtitle -->
+    <text x="0" y="105" font-family="'Inter', -apple-system, sans-serif" font-size="17" font-weight="400" fill="#A7B3C6">Administrative Hub & International Liaison</text>
+
+    <!-- Brand Signature -->
+    <g transform="translate(0, 145)">
+      <text font-family="'Manrope', -apple-system, sans-serif" font-size="12" font-weight="600" fill="#6C7A92" letter-spacing="0.5">INDIAN MANPOWER RESOURCE  •  EDITORIAL ARCHIVE</text>
+    </g>
+  </g>
+</svg>

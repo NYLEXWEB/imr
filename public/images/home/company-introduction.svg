@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <linearGradient id="grad-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0E1033"/>
+      <stop offset="50%" stop-color="#17194D"/>
+      <stop offset="100%" stop-color="#1E235C"/>
+    </linearGradient>
+    <linearGradient id="accent-glow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#17194D" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#4B91CC" stop-opacity="0.2"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#FFFFFF" stroke-opacity="0.04" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="600" fill="url(#grad-bg)"/>
+  <rect width="800" height="600" fill="url(#grid)"/>
+
+  <!-- Architectural accent elements -->
+  <g opacity="0.3">
+    <circle cx="680" cy="210" r="270" fill="none" stroke="#17194D" stroke-width="1.5" stroke-dasharray="6 6"/>
+    <circle cx="680" cy="210" r="180" fill="none" stroke="#FFFFFF" stroke-opacity="0.1" stroke-width="1"/>
+    <path d="M 0 510 L 480 510 L 600 600" fill="none" stroke="#17194D" stroke-width="2"/>
+    <line x1="80" y1="90" x2="320" y2="90" stroke="#FFFFFF" stroke-opacity="0.15" stroke-width="1"/>
+  </g>
+
+  <!-- Subtle watermark emblem -->
+  <g transform="translate(608, 150)" opacity="0.12">
+    <polygon points="50,10 90,30 90,80 50,100 10,80 10,30" fill="none" stroke="#FFFFFF" stroke-width="4"/>
+    <circle cx="50" cy="55" r="22" fill="none" stroke="#FFFFFF" stroke-width="3"/>
+  </g>
+
+  <!-- Content Container Card -->
+  <g transform="translate(64, 252)">
+    <!-- Category Badge -->
+    <rect x="0" y="0" width="109.5" height="28" rx="6" fill="#17194D" fill-opacity="0.2" stroke="#17194D" stroke-opacity="0.6" stroke-width="1"/>
+    <text x="12" y="18" font-family="'Manrope', -apple-system, sans-serif" font-size="11" font-weight="700" fill="#E8EEF5" letter-spacing="1.5">ABOUT IMR</text>
+
+    <!-- Main Title -->
+    <text x="0" y="70" font-family="'Manrope', -apple-system, sans-serif" font-size="30" font-weight="700" fill="#FFFFFF" letter-spacing="-0.5">Your Trusted Recruitment Partner</text>
+
+    <!-- Subtitle -->
+    <text x="0" y="105" font-family="'Inter', -apple-system, sans-serif" font-size="16" font-weight="400" fill="#A7B3C6">Professional Relationships & Careful Selection</text>
+
+    <!-- Brand Signature -->
+    <g transform="translate(0, 145)">
+      <text font-family="'Manrope', -apple-system, sans-serif" font-size="12" font-weight="600" fill="#6C7A92" letter-spacing="0.5">INDIAN MANPOWER RESOURCE  •  EDITORIAL ARCHIVE</text>
+    </g>
+  </g>
+</svg>
