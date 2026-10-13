@@ -1,6 +1,0 @@
-# Robots.txt for Indian Manpower Resource
-User-agent: *
-Allow: /
-
-# Sitemap
-Sitemap: https://indianmanpowerresource.com/sitemap.xml
