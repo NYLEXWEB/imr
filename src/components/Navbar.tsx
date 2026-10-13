@@ -15,6 +15,7 @@ import {
 
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [mounted, setMounted] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const pathname = usePathname();
 
@@ -25,6 +26,7 @@ export default function Navbar() {
 
   // Track scroll position to handle transparent navbar in hero section
   useEffect(() => {
+    setMounted(true);
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 40);
     };
@@ -55,8 +57,8 @@ export default function Navbar() {
     { name: "Contact", href: "/contact" },
   ];
 
-  // Transparent only during the hero section on the home page
-  const isHeroTransparent = pathname === "/" && !isScrolled;
+  // Transparent only during the hero section on the home page (matches initial SSR)
+  const isHeroTransparent = pathname === "/" && (!mounted || !isScrolled);
 
   return (
     <header
