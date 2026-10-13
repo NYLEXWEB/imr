@@ -1,6 +1,7 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Link from "next/link";
+import WhatsAppEnquiryButton from "@/components/WhatsAppEnquiryButton";
 import { GraduationCap, BookOpen, Globe, ArrowRight, Check } from "lucide-react";
 
 function WhatsAppIcon({ className = "w-4 h-4" }: { className?: string }) {
@@ -85,15 +86,12 @@ export default function EducationPage() {
             </div>
 
             <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-2.5 sm:gap-3 w-full md:w-auto">
-              <a
-                href="https://wa.me/919388770039?text=Hello%20IMR%2C%20I%20would%20like%20to%20apply%20for%20BPP%20University%20UK."
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-normal transition active:scale-95 text-center shadow-sm"
-              >
-                <WhatsAppIcon className="w-3.5 h-3.5 text-white" />
-                <span>WhatsApp Admission Desk</span>
-              </a>
+              <WhatsAppEnquiryButton
+                message="Hello IMR, I would like to apply for BPP University UK / Global Universities."
+                label="WhatsApp Admission Desk"
+                variant="modal"
+                className="bg-emerald-600 hover:bg-emerald-700 text-white border-none py-3.5"
+              />
 
               <Link
                 href="/contact"
@@ -170,15 +168,12 @@ export default function EducationPage() {
               <ArrowRight className="w-3.5 h-3.5" />
             </Link>
 
-            <a
-              href="https://wa.me/919388770039?text=Hello%20IMR%2C%20I%20would%20like%20to%20inquire%20about%20study%20abroad%20counseling."
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-full bg-white hover:bg-slate-50 text-slate-800 text-xs font-light border border-slate-300 transition active:scale-95 text-center"
-            >
-              <WhatsAppIcon className="w-4 h-4 text-emerald-600" />
-              <span>WhatsApp Counselor</span>
-            </a>
+            <WhatsAppEnquiryButton
+              message="Hello IMR, I would like to inquire about study abroad counseling and university guidance."
+              label="WhatsApp Counselor"
+              variant="modal"
+              className="px-8 py-3.5"
+            />
           </div>
         </div>
       </main>

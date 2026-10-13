@@ -2,6 +2,8 @@ import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import MobileQuickActions from "@/components/MobileQuickActions";
+import { WhatsAppModalProvider } from "@/context/WhatsAppModalContext";
+import WhatsAppInquiryModal from "@/components/WhatsAppInquiryModal";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -40,8 +42,11 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} scroll-smooth antialiased overflow-x-hidden`}>
       <body className="min-h-screen bg-white text-slate-900 font-sans selection:bg-sky-500 selection:text-white overflow-x-hidden relative pb-16 md:pb-0">
-        {children}
-        <MobileQuickActions />
+        <WhatsAppModalProvider>
+          {children}
+          <MobileQuickActions />
+          <WhatsAppInquiryModal />
+        </WhatsAppModalProvider>
       </body>
     </html>
   );

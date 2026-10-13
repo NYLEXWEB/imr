@@ -2,8 +2,11 @@
 
 import Link from "next/link";
 import { Phone, MessageCircle, Send } from "lucide-react";
+import { useWhatsAppModal } from "@/context/WhatsAppModalContext";
 
 export default function MobileQuickActions() {
+  const { openWhatsAppModal } = useWhatsAppModal();
+
   return (
     <aside
       aria-label="Quick Mobile Actions"
@@ -20,17 +23,19 @@ export default function MobileQuickActions() {
           <span>Call Desk</span>
         </a>
 
-        {/* Direct WhatsApp Button */}
-        <a
-          href="https://wa.me/919388770039?text=Hello%20Indian%20Manpower%20Resource%2C%20I%20would%20like%20to%20make%20an%20inquiry."
-          target="_blank"
-          rel="noopener noreferrer"
+        {/* Regional WhatsApp Button */}
+        <button
+          onClick={() =>
+            openWhatsAppModal({
+              message: "Hello Indian Manpower Resource, I would like to make an inquiry.",
+            })
+          }
           className="flex-1 inline-flex items-center justify-center gap-1.5 py-2 px-3 rounded-full bg-emerald-600/90 hover:bg-emerald-600 active:scale-95 transition text-[11px] font-medium text-white shadow-sm"
-          aria-label="WhatsApp Chat with IMR"
+          aria-label="WhatsApp Chat with Regional Desk"
         >
           <MessageCircle className="w-3.5 h-3.5" />
           <span>WhatsApp</span>
-        </a>
+        </button>
 
         {/* Direct Inquiry Link */}
         <Link

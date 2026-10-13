@@ -11,6 +11,7 @@ import {
   Building,
   ArrowRight,
 } from "lucide-react";
+import WhatsAppEnquiryButton from "@/components/WhatsAppEnquiryButton";
 
 function WhatsAppIcon({ className = "w-4 h-4" }: { className?: string }) {
   return (
@@ -195,15 +196,13 @@ export default function MedicalPage() {
                 Direct interview campaigns for Bahrain, Kuwait, Qatar, UAE, and European healthcare trusts.
               </p>
               <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-2.5 sm:gap-3 w-full md:w-auto">
-                <a
-                  href="https://wa.me/919388770039?text=Hello%20IMR%2C%20I%20am%20a%20healthcare%20professional%20seeking%20overseas%20placement."
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-normal transition active:scale-95 text-center shadow-sm"
-                >
-                  <WhatsAppIcon className="w-3.5 h-3.5 text-white" />
-                  <span>WhatsApp Healthcare Desk</span>
-                </a>
+                <WhatsAppEnquiryButton
+                  message="Hello IMR, I am inquiring about Healthcare and Nursing opportunities / recruitment."
+                  label="WhatsApp Healthcare Desk"
+                  variant="emerald"
+                  showArrow={true}
+                  className="py-3.5 px-6 text-xs font-medium"
+                />
 
                 <Link
                   href="/contact"

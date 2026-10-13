@@ -23,6 +23,9 @@ import {
   Flame,
   Sparkles,
 } from "lucide-react";
+import WhatsAppEnquiryButton from "@/components/WhatsAppEnquiryButton";
+import AiraaEuropeanMission from "@/components/AiraaEuropeanMission";
+import EuropeanDeploymentsGallery from "@/components/EuropeanDeploymentsGallery";
 
 function WhatsAppIcon({ className = "w-4 h-4" }: { className?: string }) {
   return (
@@ -46,7 +49,7 @@ export default function Home() {
         "European Hospital Trust Pathways (HSE & NHS)",
       ],
       icon: Stethoscope,
-      image: "/images/assets/banner_healthcare.png",
+      image: "/services/1.png",
       href: "/medical",
       waMessage:
         "Hello Indian Manpower Resource, I would like to make an inquiry regarding Medical & Healthcare Recruitment services.",
@@ -63,7 +66,7 @@ export default function Home() {
         "Saudi Arabia, UAE, Qatar & Europe Project Staffing",
       ],
       icon: Factory,
-      image: "/images/assets/oil_gas_logos.png",
+      image: "/services/2.png",
       href: "/sectors",
       waMessage:
         "Hello Indian Manpower Resource, I would like to make an inquiry regarding Oil & Gas and Industrial Project recruitment.",
@@ -80,7 +83,7 @@ export default function Home() {
         "Hotel Operations, Culinary & Facility Staff",
       ],
       icon: HardHat,
-      image: "/images/assets/banner_construction.png",
+      image: "/services/3.png",
       href: "/sectors",
       waMessage:
         "Hello Indian Manpower Resource, I would like to make an inquiry regarding Construction & Hospitality manpower.",
@@ -97,7 +100,7 @@ export default function Home() {
         "Full Legal Work Authorization & Mobilization",
       ],
       icon: Truck,
-      image: "/images/assets/banner_transport.png",
+      image: "/services/4.png",
       href: "/sectors",
       waMessage:
         "Hello Indian Manpower Resource, I would like to make an inquiry regarding European Production & Transport recruitment.",
@@ -114,7 +117,7 @@ export default function Home() {
         "Dependent Visa Pathways for Graduate Students",
       ],
       icon: GraduationCap,
-      image: "/images/assets/education_graduates.png",
+      image: "/services/5.png",
       href: "/education",
       waMessage:
         "Hello Indian Manpower Resource, I would like to make an inquiry regarding Global Higher Education and Study Abroad admissions.",
@@ -131,7 +134,7 @@ export default function Home() {
         "Comprehensive 6-Month Post-Deployment Guarantee",
       ],
       icon: FileCheck2,
-      image: "/images/assets/reason_team_meeting.png",
+      image: "/services/6.png",
       href: "/process",
       waMessage:
         "Hello Indian Manpower Resource, I would like to make an inquiry regarding Executive Search and the 11-Stage Recruitment workflow.",
@@ -266,15 +269,11 @@ export default function Home() {
                     <ArrowRight className="w-3.5 h-3.5 transition-transform group-hover:translate-x-1" />
                   </Link>
 
-                  <a
-                    href="https://wa.me/919388770039?text=Hello%20IMR%2C%20I%20would%20like%20to%20learn%20more%20about%20your%20company%20profile%20and%20recruitment%20services."
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-white hover:bg-slate-50 text-slate-800 text-xs font-light border border-slate-300 transition active:scale-95 text-center"
-                  >
-                    <WhatsAppIcon className="w-4 h-4 text-emerald-600" />
-                    <span>WhatsApp Inquiry</span>
-                  </a>
+                  <WhatsAppEnquiryButton
+                    message="Hello IMR, I would like to learn more about your company profile and recruitment services."
+                    label="WhatsApp Inquiry"
+                    variant="hero-pill"
+                  />
                 </div>
               </div>
 
@@ -282,21 +281,13 @@ export default function Home() {
               <div className="lg:col-span-5 space-y-3">
                 <div className="relative aspect-[4/3] rounded-3xl overflow-hidden border border-slate-200 shadow-md bg-slate-900 group">
                   <Image
-                    src="/images/assets/team_management.png"
+                    src="/about/about-image.png"
                     alt="Indian Manpower Resource Leadership Board"
                     fill
                     className="object-cover object-top transition-transform duration-700 group-hover:scale-105"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent" />
-                  <div className="absolute bottom-3 sm:bottom-4 left-3 sm:left-4 right-3 sm:right-4 text-white text-xs space-y-0.5">
-                    <div className="font-medium text-white flex items-center gap-2 text-xs sm:text-sm">
-                      <span className="w-2 h-2 rounded-full bg-sky-400" />
-                      Executive Leadership & Management Board
-                    </div>
-                    <div className="text-[10px] sm:text-[11px] text-slate-300 font-light">
-                      Standing in the middle with the power of human resources
-                    </div>
-                  </div>
+
                 </div>
 
                 <div className="p-3.5 sm:p-4 rounded-2xl bg-sky-50/70 border border-sky-100 flex items-center justify-between text-xs">
@@ -333,8 +324,6 @@ export default function Home() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6">
               {services.map((svc) => {
                 const Icon = svc.icon;
-                const encodedMsg = encodeURIComponent(svc.waMessage);
-                const waUrl = `https://wa.me/919388770039?text=${encodedMsg}`;
 
                 return (
                   <div
@@ -383,17 +372,13 @@ export default function Home() {
                       </div>
                     </div>
 
-                    {/* Bottom Action Buttons: WhatsApp Enquiry + Learn More */}
+                    {/* Bottom Action Buttons: WhatsApp Enquiry (Europe & India) + Learn More */}
                     <div className="p-5 sm:p-6 pt-0 space-y-2">
-                      <a
-                        href={waUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-full bg-[#050811] hover:bg-slate-800 text-white text-xs font-light transition active:scale-95 shadow-2xs"
-                      >
-                        <WhatsAppIcon className="w-3.5 h-3.5 text-emerald-400" />
-                        <span>WhatsApp Enquiry</span>
-                      </a>
+                      <WhatsAppEnquiryButton
+                        message={`Hello IMR, I have an inquiry regarding ${svc.title}.`}
+                        label="WhatsApp Enquiry"
+                        variant="service-card"
+                      />
 
                       <Link
                         href={svc.href}
@@ -409,6 +394,12 @@ export default function Home() {
             </div>
           </div>
         </section>
+
+        {/* 4B. AIRAA STRATEGIC EUROPEAN MISSION & 2026 MOBILITY BLUEPRINT */}
+        <AiraaEuropeanMission />
+
+        {/* 4C. EUROPEAN VISA STAMPINGS & DEPLOYMENT CORRIDORS */}
+        <EuropeanDeploymentsGallery />
 
         {/* 5. SECTORS & ORIGINAL CLIENT LOGOS SECTION */}
         <section id="clients-section" className="py-14 sm:py-20 lg:py-24 bg-white border-y border-slate-200/80">
@@ -581,15 +572,13 @@ export default function Home() {
               </div>
 
               <div className="flex-shrink-0 flex flex-col sm:flex-row gap-2.5 sm:gap-3 relative z-10 w-full md:w-auto">
-                <a
-                  href="https://wa.me/919388770039?text=Hello%20IMR%2C%20I%20am%20interested%20in%20Global%20Higher%20Education%20and%20Study%20Abroad%20admissions."
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-normal transition shadow active:scale-95 text-center"
-                >
-                  <WhatsAppIcon className="w-4 h-4" />
-                  <span>WhatsApp Admission Desk</span>
-                </a>
+                <WhatsAppEnquiryButton
+                  message="Hello IMR, I am interested in Global Higher Education and Study Abroad admissions."
+                  label="WhatsApp Admission Desk"
+                  variant="emerald"
+                  showArrow={true}
+                  className="py-3.5 px-6 font-medium text-xs shadow-md shadow-emerald-900/30"
+                />
                 <Link
                   href="/education"
                   className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full bg-sky-500 hover:bg-sky-600 text-white text-xs font-normal transition shadow active:scale-95 text-center"
@@ -695,15 +684,10 @@ export default function Home() {
                 <ArrowRight className="w-3.5 h-3.5" />
               </Link>
 
-              <a
-                href="https://wa.me/919388770039?text=Hello%20IMR%2C%20I%20would%20like%20to%20connect%20with%20your%20recruitment%20desk."
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-full bg-white hover:bg-slate-50 text-slate-800 text-xs font-light border border-slate-300 transition active:scale-95"
-              >
-                <WhatsAppIcon className="w-4 h-4 text-emerald-600" />
-                <span>Quick WhatsApp Connect</span>
-              </a>
+              <WhatsAppEnquiryButton
+                message="Hello IMR, I would like to connect with your recruitment desk regarding workforce hiring."
+                variant="banner"
+              />
             </div>
           </div>
         </section>

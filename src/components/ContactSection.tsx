@@ -80,63 +80,81 @@ export default function ContactSection() {
                 Direct Regional Desks
               </span>
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-2.5 sm:gap-3">
-                <div className="p-3.5 rounded-2xl bg-slate-50 border border-slate-200/80 hover:border-sky-300 transition flex flex-col justify-between">
+                {/* For European Clients */}
+                <div className="p-3.5 rounded-2xl bg-emerald-50/50 border-2 border-emerald-500/30 hover:border-emerald-500 transition flex flex-col justify-between shadow-2xs">
                   <div>
-                    <div className="flex items-center gap-1.5 text-xs text-slate-600 font-light mb-1">
-                      <span className="text-base">🇮🇪</span>
-                      <span className="font-medium text-slate-900">Ireland</span>
+                    <div className="flex items-center justify-between mb-1">
+                      <div className="flex items-center gap-1.5 text-xs text-slate-600 font-light">
+                        <span className="text-base">🇪🇺 🇮🇪</span>
+                        <span className="font-semibold text-slate-900">For European Clients</span>
+                      </div>
                     </div>
+                    <span className="text-[10px] text-emerald-800 font-medium block mb-1">
+                      Europe / Ireland Desk
+                    </span>
                     <a
                       href="tel:+353874896695"
-                      className="text-xs font-normal text-[#050811] hover:underline block"
+                      className="text-xs font-normal text-[#050811] hover:underline block font-mono"
                     >
                       +353 874896695
                     </a>
                   </div>
                   <a
-                    href="https://wa.me/353874896695?text=Hello%20IMR%20Ireland%20Desk%2C%20I%20have%20an%20inquiry."
+                    href="https://wa.me/353874896695?text=Hello%20IMR%20European%20Desk%2C%20I%20am%20reaching%20out%20regarding%20recruitment%20for%20European%20clients."
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="mt-3 inline-flex items-center gap-1.5 text-[11px] text-emerald-700 hover:text-emerald-800 font-light"
+                    className="mt-3 inline-flex items-center justify-center gap-1.5 py-1.5 px-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white text-[11px] font-medium shadow-2xs transition active:scale-95"
                   >
-                    <WhatsAppIcon className="w-3.5 h-3.5 text-emerald-600" />
-                    <span>WhatsApp</span>
+                    <WhatsAppIcon className="w-3.5 h-3.5" />
+                    <span>WhatsApp (Europe)</span>
                   </a>
                 </div>
 
+                {/* For India */}
                 <div className="p-3.5 rounded-2xl bg-slate-50 border border-slate-200/80 hover:border-sky-300 transition flex flex-col justify-between">
                   <div>
-                    <div className="flex items-center gap-1.5 text-xs text-slate-600 font-light mb-1">
-                      <span className="text-base">🇮🇳</span>
-                      <span className="font-medium text-slate-900">India</span>
+                    <div className="flex items-center justify-between mb-1">
+                      <div className="flex items-center gap-1.5 text-xs text-slate-600 font-light">
+                        <span className="text-base">🇮🇳</span>
+                        <span className="font-semibold text-slate-900">For India</span>
+                      </div>
                     </div>
+                    <span className="text-[10px] text-slate-500 block mb-1">
+                      India Head Office
+                    </span>
                     <a
                       href="tel:+919388770039"
-                      className="text-xs font-normal text-[#050811] hover:underline block"
+                      className="text-xs font-normal text-[#050811] hover:underline block font-mono"
                     >
                       +91 93887 70039
                     </a>
                   </div>
                   <a
-                    href="https://wa.me/919388770039?text=Hello%20IMR%20India%20Desk%2C%20I%20have%20an%20inquiry."
+                    href="https://wa.me/919388770039?text=Hello%20IMR%20India%20Desk%2C%20I%20have%20an%20inquiry%20regarding%20recruitment."
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="mt-3 inline-flex items-center gap-1.5 text-[11px] text-emerald-700 hover:text-emerald-800 font-light"
+                    className="mt-3 inline-flex items-center justify-center gap-1.5 py-1.5 px-2.5 rounded-xl bg-slate-900 hover:bg-slate-800 text-white text-[11px] font-medium transition active:scale-95"
                   >
-                    <WhatsAppIcon className="w-3.5 h-3.5 text-emerald-600" />
-                    <span>WhatsApp</span>
+                    <WhatsAppIcon className="w-3.5 h-3.5 text-emerald-400" />
+                    <span>WhatsApp (India)</span>
                   </a>
                 </div>
 
+                {/* UAE Desk */}
                 <div className="p-3.5 rounded-2xl bg-slate-50 border border-slate-200/80 hover:border-sky-300 transition flex flex-col justify-between">
                   <div>
-                    <div className="flex items-center gap-1.5 text-xs text-slate-600 font-light mb-1">
-                      <span className="text-base">🇦🇪</span>
-                      <span className="font-medium text-slate-900">UAE</span>
+                    <div className="flex items-center justify-between mb-1">
+                      <div className="flex items-center gap-1.5 text-xs text-slate-600 font-light">
+                        <span className="text-base">🇦🇪</span>
+                        <span className="font-semibold text-slate-900">For UAE</span>
+                      </div>
                     </div>
+                    <span className="text-[10px] text-slate-500 block mb-1">
+                      Middle East Desk
+                    </span>
                     <a
                       href="tel:+971501165956"
-                      className="text-xs font-normal text-[#050811] hover:underline block"
+                      className="text-xs font-normal text-[#050811] hover:underline block font-mono"
                     >
                       +971 50 116 5956
                     </a>
@@ -145,10 +163,10 @@ export default function ContactSection() {
                     href="https://wa.me/971501165956?text=Hello%20IMR%20UAE%20Desk%2C%20I%20have%20an%20inquiry."
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="mt-3 inline-flex items-center gap-1.5 text-[11px] text-emerald-700 hover:text-emerald-800 font-light"
+                    className="mt-3 inline-flex items-center justify-center gap-1.5 py-1.5 px-2.5 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-800 text-[11px] font-medium transition active:scale-95"
                   >
                     <WhatsAppIcon className="w-3.5 h-3.5 text-emerald-600" />
-                    <span>WhatsApp</span>
+                    <span>WhatsApp (UAE)</span>
                   </a>
                 </div>
               </div>
@@ -289,19 +307,34 @@ export default function ContactSection() {
 
                   <div>
                     <label className="block text-xs font-light text-slate-700 mb-1">
-                      I Am An
+                      Inquiry Type
                     </label>
                     <select
                       className="w-full text-base sm:text-xs px-3.5 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-sky-500/20 focus:border-sky-500 bg-slate-50/50 focus:bg-white font-light transition"
                       value={formData.type}
                       onChange={(e) => setFormData({ ...formData, type: e.target.value })}
                     >
-                      <option value="Employer">Overseas Employer</option>
+                      <option value="Employer">European / Overseas Employer</option>
                       <option value="JobSeeker">Job Seeker / Candidate</option>
                       <option value="Student">Student (Study Abroad)</option>
                       <option value="Partner">Business Partner / Agency</option>
                     </select>
                   </div>
+                </div>
+
+                <div>
+                  <label className="block text-xs font-light text-slate-700 mb-1">
+                    Designated Regional Desk
+                  </label>
+                  <select
+                    className="w-full text-base sm:text-xs px-3.5 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-sky-500/20 focus:border-sky-500 bg-slate-50/50 focus:bg-white font-light transition"
+                    value={formData.country}
+                    onChange={(e) => setFormData({ ...formData, country: e.target.value })}
+                  >
+                    <option value="Europe">🇪🇺 Europe & Ireland Desk (For European Clients)</option>
+                    <option value="India">🇮🇳 India Head Office (For India)</option>
+                    <option value="UAE">🇦🇪 UAE & GCC Regional Desk</option>
+                  </select>
                 </div>
 
                 <div>

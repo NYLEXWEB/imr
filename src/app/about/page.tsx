@@ -13,6 +13,7 @@ import {
   MapPin,
   Sparkles,
 } from "lucide-react";
+import WhatsAppEnquiryButton from "@/components/WhatsAppEnquiryButton";
 
 function WhatsAppIcon({ className = "w-4 h-4" }: { className?: string }) {
   return (
@@ -86,6 +87,13 @@ const milestones = [
       "Inaugurated our UAE registered office (Lic. SC241019101) to support Middle East client mandates.",
     color: "from-amber-600 to-yellow-600",
   },
+  {
+    year: "2026",
+    title: "AIRAA Member & European Mission",
+    description:
+      "Official Member of All India Recruiting Agency Association (AIRAA). Strategic deployment corridors expanded across Romania, Germany, Greece, Bulgaria, Ireland, and Poland under the 2026 EU Fair Labour Mobility framework.",
+    color: "from-emerald-600 to-sky-600",
+  },
 ];
 
 export default function AboutPage() {
@@ -97,14 +105,20 @@ export default function AboutPage() {
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-14 sm:space-y-20">
           {/* Header */}
           <div className="text-center space-y-3 sm:space-y-4 max-w-3xl mx-auto">
-            <span className="text-[11px] sm:text-xs font-mono tracking-widest uppercase text-sky-700 bg-sky-50 px-3.5 py-1.5 rounded-full border border-sky-200/80">
-              About Indian Manpower Resource
-            </span>
+            <div className="flex flex-wrap items-center justify-center gap-2">
+              <span className="text-[11px] sm:text-xs font-mono tracking-widest uppercase text-emerald-800 bg-emerald-50 px-3.5 py-1.5 rounded-full border border-emerald-200">
+                Member: AIRAA (All India Recruiting Agency Association)
+              </span>
+              <span className="text-[11px] sm:text-xs font-mono tracking-widest uppercase text-sky-700 bg-sky-50 px-3.5 py-1.5 rounded-full border border-sky-200/80">
+                MEA Approved (Govt. of India)
+              </span>
+            </div>
             <h1 className="text-2xl sm:text-4xl lg:text-5xl font-light tracking-tight text-[#050811]">
-              Leadership, Philosophy & Journey
+              International Manpower Resources <br className="hidden sm:inline" />
+              <span className="font-normal text-sky-700">& Healthcare Recruiters</span>
             </h1>
             <p className="text-xs sm:text-sm lg:text-base text-slate-600 font-light leading-relaxed">
-              Established with an unshakeable commitment to human integrity and mutual value creation across international labor markets.
+              Operating as Indian Manpower Resource (IMR) with global regional desks in Ireland and the UAE. Dedicated to ethical, verifiable, and sustainable talent mobilization across Europe and worldwide.
             </p>
           </div>
 
@@ -147,7 +161,7 @@ export default function AboutPage() {
           <section className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
             <div className="lg:col-span-5 relative aspect-[4/3] rounded-3xl overflow-hidden border border-slate-200 shadow-md bg-slate-900 group">
               <Image
-                src="/images/assets/team_management.png"
+                src="/about/about-image.png"
                 alt="Management Board"
                 fill
                 className="object-cover object-top transition-transform duration-700 group-hover:scale-105"
@@ -244,15 +258,12 @@ export default function AboutPage() {
               <ArrowRight className="w-3.5 h-3.5" />
             </Link>
 
-            <a
-              href="https://wa.me/919388770039?text=Hello%20IMR%2C%20I%20would%20like%20to%20connect%20regarding%20corporate%20partnership."
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-full bg-white hover:bg-slate-50 text-slate-800 text-xs font-light border border-slate-300 transition active:scale-95"
-            >
-              <WhatsAppIcon className="w-4 h-4 text-emerald-600" />
-              <span>Contact via WhatsApp</span>
-            </a>
+            <WhatsAppEnquiryButton
+              message="Hello IMR, I would like to connect regarding corporate partnership and manpower recruitment."
+              label="Contact via WhatsApp"
+              variant="modal"
+              className="px-8 py-3.5"
+            />
           </div>
         </div>
       </main>

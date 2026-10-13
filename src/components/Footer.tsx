@@ -25,17 +25,21 @@ export default function Footer() {
             </div>
             <div className="space-y-0.5">
               <h3 className="text-sm font-normal text-white tracking-tight">
-                INDIAN MANPOWER RESOURCE
+                IMR • INTERNATIONAL MANPOWER RESOURCES
               </h3>
               <p className="text-[10px] text-sky-400 uppercase tracking-widest font-light">
-                SOURCING MANPOWER TO THE WORLD
+                & HEALTHCARE RECRUITERS • SOURCING TO EUROPE & WORLDWIDE
               </p>
             </div>
             <p className="text-xs text-slate-400 font-light leading-relaxed max-w-sm">
-              A Government-Approved recruiting agency dedicated to humanity, loyalty, and precision recruitment. Giving one hand to the employee and the other to the employer.
+              Official Member of the All India Recruiting Agency Association (AIRAA) & Government-Approved recruiting agency (MEA Licensed). Operating dedicated bilateral talent corridors to Europe, UK, and the GCC.
             </p>
 
             <div className="pt-2 space-y-1.5 text-[11px] text-slate-300 font-light">
+              <div className="flex items-center gap-2">
+                <ShieldCheck className="w-4 h-4 text-emerald-400 flex-shrink-0" />
+                <span>Member: All India Recruiting Agency Association (AIRAA)</span>
+              </div>
               <div className="flex items-center gap-2">
                 <ShieldCheck className="w-4 h-4 text-emerald-400 flex-shrink-0" />
                 <span>Govt. Approved: LIC. B1157/KER/PART/200/5/9681/2020</span>
@@ -102,33 +106,58 @@ export default function Footer() {
             <h4 className="text-xs font-normal text-white uppercase tracking-wider">
               Global Regional Desks
             </h4>
-            <div className="space-y-2.5 text-xs font-light">
-              <div>
-                <span className="text-slate-200 font-normal">🇮🇳 India Office:</span>
-                <p className="text-[11px] text-slate-400 leading-relaxed">
-                  First Floor, City heights building N.H 47, South Chalakudy, Thrissur, Kerala India.
-                </p>
-                <a href="tel:+919388770039" className="text-sky-400 hover:underline text-[11px] inline-block mt-0.5">
-                  +91 93887 70039
-                </a>
-              </div>
-
-              <div>
-                <span className="text-slate-200 font-normal">🇮🇪 Ireland Desk:</span>
-                <div>
-                  <a href="tel:+353874896695" className="text-sky-400 hover:underline text-[11px] inline-block">
+            <div className="space-y-3 text-xs font-light">
+              {/* European Clients Desk */}
+              <div className="p-2.5 rounded-xl bg-white/5 border border-white/10 space-y-1">
+                <div className="flex items-center justify-between text-white font-medium text-[11px]">
+                  <span>🇪🇺 🇮🇪 For European Clients</span>
+                  <span className="text-[10px] text-emerald-400 font-normal">Ireland Desk</span>
+                </div>
+                <div className="flex items-center justify-between pt-0.5">
+                  <a href="tel:+353874896695" className="text-sky-400 hover:underline text-[11px] font-mono">
                     +353 874896695
                   </a>
+                  <a
+                    href="https://wa.me/353874896695?text=Hello%20IMR%20European%20Desk%2C%20I%20am%20reaching%20out%20regarding%20recruitment%20for%20European%20clients."
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1 text-[10px] text-emerald-400 hover:text-emerald-300 transition"
+                  >
+                    <span>WhatsApp</span>
+                  </a>
                 </div>
               </div>
 
-              <div>
-                <span className="text-slate-200 font-normal">🇦🇪 UAE Desk:</span>
-                <div>
-                  <a href="tel:+971501165956" className="text-sky-400 hover:underline text-[11px] inline-block">
-                    +971 50 116 5956
+              {/* India Head Office */}
+              <div className="p-2.5 rounded-xl bg-white/5 border border-white/10 space-y-1">
+                <div className="flex items-center justify-between text-white font-medium text-[11px]">
+                  <span>🇮🇳 For India</span>
+                  <span className="text-[10px] text-slate-400 font-normal">Head Office</span>
+                </div>
+                <p className="text-[10px] text-slate-400 leading-tight">
+                  First Floor, City heights bldg, South Chalakudy, Thrissur, Kerala.
+                </p>
+                <div className="flex items-center justify-between pt-0.5">
+                  <a href="tel:+919388770039" className="text-sky-400 hover:underline text-[11px] font-mono">
+                    +91 93887 70039
+                  </a>
+                  <a
+                    href="https://wa.me/919388770039?text=Hello%20IMR%20India%20Desk%2C%20I%20have%20an%20inquiry."
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1 text-[10px] text-emerald-400 hover:text-emerald-300 transition"
+                  >
+                    <span>WhatsApp</span>
                   </a>
                 </div>
+              </div>
+
+              {/* UAE Desk */}
+              <div className="flex items-center justify-between text-[11px]">
+                <span className="text-slate-300">🇦🇪 For UAE / GCC:</span>
+                <a href="tel:+971501165956" className="text-sky-400 hover:underline font-mono">
+                  +971 50 116 5956
+                </a>
               </div>
 
               <div className="pt-1">

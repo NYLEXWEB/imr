@@ -1,6 +1,7 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Link from "next/link";
+import WhatsAppEnquiryButton from "@/components/WhatsAppEnquiryButton";
 import {
   Search,
   MessageSquare,
@@ -171,15 +172,12 @@ export default function ProcessPage() {
                 <span>Initiate Demand Letter</span>
                 <ArrowRight className="w-3.5 h-3.5" />
               </Link>
-              <a
-                href="https://wa.me/919388770039?text=Hello%20IMR%2C%20I%20would%20like%20to%20discuss%20initiating%20a%20recruitment%20mandate."
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full bg-white/10 hover:bg-white/20 text-white text-xs font-light border border-white/20 transition active:scale-95 text-center"
-              >
-                <WhatsAppIcon className="w-3.5 h-3.5 text-emerald-400" />
-                <span>Quick WhatsApp Discussion</span>
-              </a>
+              <WhatsAppEnquiryButton
+                message="Hello IMR, I would like to discuss initiating an overseas recruitment mandate."
+                label="Quick WhatsApp Discussion"
+                variant="modal"
+                className="bg-white/10 hover:bg-white/20 text-white border-white/20 py-3.5"
+              />
             </div>
           </div>
         </div>

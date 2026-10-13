@@ -13,6 +13,7 @@ import {
   ShieldCheck,
   Sparkles,
 } from "lucide-react";
+import WhatsAppEnquiryButton from "@/components/WhatsAppEnquiryButton";
 
 function WhatsAppIcon({ className = "w-4 h-4" }: { className?: string }) {
   return (
@@ -141,15 +142,13 @@ export default function SectorsPage() {
                   Corporate Partner Brands (Original Logos)
                 </h2>
               </div>
-              <a
-                href="https://wa.me/919388770039?text=Hello%20IMR%2C%20we%20are%20an%20employer%20inquiring%20about%20corporate%20recruitment."
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-full bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-normal transition shadow-sm w-full sm:w-fit active:scale-95"
-              >
-                <WhatsAppIcon className="w-3.5 h-3.5 text-white" />
-                <span>Employer WhatsApp Inquiry</span>
-              </a>
+              <WhatsAppEnquiryButton
+                message="Hello IMR, we are an employer inquiring about corporate recruitment and workforce mobilization."
+                label="Employer WhatsApp Inquiry"
+                variant="emerald"
+                showArrow={true}
+                className="py-2.5 px-5 font-medium text-xs"
+              />
             </div>
 
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-6">
@@ -255,15 +254,13 @@ export default function SectorsPage() {
                 </div>
 
                 <div className="pt-4 border-t border-slate-100 space-y-2">
-                  <a
-                    href="https://wa.me/919388770039?text=Hello%20IMR%2C%20I%20am%20inquiring%20about%20Healthcare%20candidate%20placements."
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-full bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-normal transition active:scale-95"
-                  >
-                    <WhatsAppIcon className="w-3.5 h-3.5 text-white" />
-                    <span>WhatsApp Healthcare Desk</span>
-                  </a>
+                  <WhatsAppEnquiryButton
+                    message="Hello IMR, I am inquiring about Healthcare candidate placements."
+                    label="WhatsApp Healthcare Desk"
+                    variant="emerald"
+                    showArrow={true}
+                    className="w-full py-2.5 text-xs font-medium"
+                  />
                   <Link
                     href="/medical"
                     className="w-full text-center text-xs text-sky-600 font-normal hover:underline block pt-1"
@@ -299,15 +296,13 @@ export default function SectorsPage() {
                 </div>
 
                 <div className="pt-4 border-t border-slate-100 space-y-2">
-                  <a
-                    href="https://wa.me/919388770039?text=Hello%20IMR%2C%20I%20am%20inquiring%20about%20Construction%20and%20Hospitality%20staffing."
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-full bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-normal transition active:scale-95"
-                  >
-                    <WhatsAppIcon className="w-3.5 h-3.5 text-white" />
-                    <span>WhatsApp Construction Desk</span>
-                  </a>
+                  <WhatsAppEnquiryButton
+                    message="Hello IMR, I am inquiring about Construction and Hospitality staffing."
+                    label="WhatsApp Construction Desk"
+                    variant="emerald"
+                    showArrow={true}
+                    className="w-full py-2.5 text-xs font-medium"
+                  />
                 </div>
               </div>
 
@@ -337,15 +332,13 @@ export default function SectorsPage() {
                 </div>
 
                 <div className="pt-4 border-t border-slate-100 space-y-2">
-                  <a
-                    href="https://wa.me/919388770039?text=Hello%20IMR%2C%20I%20am%20inquiring%20about%20European%20Production%20and%20Transport%20staffing."
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-full bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-normal transition active:scale-95"
-                  >
-                    <WhatsAppIcon className="w-3.5 h-3.5 text-white" />
-                    <span>WhatsApp Logistics Desk</span>
-                  </a>
+                  <WhatsAppEnquiryButton
+                    message="Hello IMR European Desk, I am inquiring about European Production and Transport staffing (Poland & Lithuania)."
+                    label="WhatsApp Logistics Desk"
+                    variant="emerald"
+                    showArrow={true}
+                    className="w-full py-2.5 text-xs font-medium"
+                  />
                 </div>
               </div>
             </div>
@@ -361,15 +354,13 @@ export default function SectorsPage() {
               <ArrowRight className="w-3.5 h-3.5" />
             </Link>
 
-            <a
-              href="https://wa.me/919388770039?text=Hello%20IMR%2C%20we%20have%20an%20urgent%20industry%20demand%20to%20discuss."
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-full bg-white hover:bg-slate-50 text-slate-800 text-xs font-light border border-slate-300 transition active:scale-95"
-            >
-              <WhatsAppIcon className="w-4 h-4 text-emerald-600" />
-              <span>Discuss via WhatsApp</span>
-            </a>
+            <WhatsAppEnquiryButton
+              message="Hello IMR, we have an urgent industry demand to discuss."
+              label="Discuss via WhatsApp"
+              variant="emerald"
+              showArrow={true}
+              className="px-8 py-3.5 text-xs font-medium"
+            />
           </div>
         </div>
       </main>
