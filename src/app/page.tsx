@@ -247,7 +247,7 @@ export default function Home() {
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-2.5 sm:gap-3 pt-1">
                   <div className="p-3 sm:p-3.5 rounded-2xl bg-slate-50 border border-slate-200/80 shadow-2xs space-y-0.5">
                     <div className="text-xs font-normal text-slate-900">Govt. MEA License</div>
-                    <div className="text-[11px] text-sky-600 font-light">B1157/KER/PART/2020</div>
+                    <div className="text-[11px] text-sky-600 font-light">B1157/KER/PART/200/5/9681</div>
                   </div>
                   <div className="p-3 sm:p-3.5 rounded-2xl bg-slate-50 border border-slate-200/80 shadow-2xs space-y-0.5">
                     <div className="text-xs font-normal text-slate-900">3 Regional Hubs</div>
@@ -405,14 +405,14 @@ export default function Home() {
         <section id="clients-section" className="py-14 sm:py-20 lg:py-24 bg-white border-y border-slate-200/80">
           <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10 sm:space-y-14">
             <div className="text-center space-y-3 max-w-2xl mx-auto">
-              <span className="text-xs font-mono tracking-wider text-sky-600 uppercase">
-                Brochure Page 07 & 10 • Verified Clients
+              <span className="text-xs font-mono tracking-wider text-sky-700 uppercase font-medium">
+                Trusted by Global Employers
               </span>
               <h2 className="text-2xl sm:text-4xl font-light tracking-tight text-[#0a0f1d]">
-                OUR SATISFIED EMPLOYERS & CLIENTS
+                Established Corporate Partnerships
               </h2>
               <p className="text-xs sm:text-sm text-slate-600 font-light leading-relaxed">
-                Direct recruitments and established workforce partnerships with premier international hospitals, contracting corporations, and European logistics firms.
+                Direct recruitments and established workforce partnerships with premier international hospitals, engineering contracting corporations, and European logistics fleets.
               </p>
             </div>
 
@@ -426,7 +426,7 @@ export default function Home() {
                   </h3>
                 </div>
                 <span className="text-[11px] sm:text-xs text-slate-500 font-light">
-                  Extracted directly from official IMR credentials
+                  Verified Bilateral & Employer Mandates
                 </span>
               </div>
 
@@ -499,11 +499,11 @@ export default function Home() {
         <section id="process-preview" className="py-14 sm:py-20 lg:py-24 bg-slate-50/70 border-b border-slate-200/80">
           <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10 sm:space-y-12">
             <div className="text-center space-y-3 max-w-2xl mx-auto">
-              <span className="text-xs font-mono tracking-wider text-sky-600 uppercase">
-                Brochure Page 05 • Methodology
+              <span className="text-xs font-mono tracking-wider text-sky-700 uppercase font-medium">
+                Ethical Mobilization Framework
               </span>
               <h2 className="text-2xl sm:text-4xl font-light tracking-tight text-[#0a0f1d]">
-                11-STAGE RECRUITMENT PROCESS
+                11-Stage Structured Recruitment Process
               </h2>
               <p className="text-xs sm:text-sm text-slate-600 font-light leading-relaxed">
                 A rigorous, transparent workflow from Demand Letter and candidate mapping to embassy visa issuance and 6-month post-deployment monitoring.
@@ -550,7 +550,7 @@ export default function Home() {
               <div className="space-y-3 sm:space-y-4 max-w-2xl relative z-10 w-full">
                 <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 backdrop-blur-md text-sky-300 text-[11px] sm:text-xs font-mono uppercase">
                   <GraduationCap className="w-4 h-4 text-sky-400" />
-                  <span>Brochure Page 08 • Study Abroad</span>
+                  <span>Higher Education & Clinical Pathways</span>
                 </div>
                 <h3 className="text-xl sm:text-3xl lg:text-4xl font-light text-white leading-tight">
                   Global Higher Education Admissions

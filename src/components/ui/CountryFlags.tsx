@@ -210,6 +210,22 @@ export function IndiaFlag({ className = "w-6 h-4" }: FlagProps) {
   );
 }
 
+// 11. UAE Flag (Red vertical at hoist, Green, White, Black horizontal)
+export function UAEFlag({ className = "w-6 h-4" }: FlagProps) {
+  return (
+    <svg
+      viewBox="0 0 300 200"
+      className={`inline-block rounded-xs shadow-2xs border border-slate-300/50 object-cover shrink-0 ${className}`}
+      aria-label="Flag of the United Arab Emirates"
+    >
+      <rect x="75" width="225" height="66.7" fill="#00732f" />
+      <rect x="75" y="66.7" width="225" height="66.7" fill="#FFFFFF" />
+      <rect x="75" y="133.4" width="225" height="66.7" fill="#000000" />
+      <rect width="75" height="200" fill="#FF0000" />
+    </svg>
+  );
+}
+
 // Country Code Resolver Component
 export function CountryFlag({
   code,
@@ -248,6 +264,9 @@ export function CountryFlag({
     case "india":
     case "in":
       return <IndiaFlag className={className} />;
+    case "uae":
+    case "ae":
+      return <UAEFlag className={className} />;
     case "europe":
     case "eu":
     default:
